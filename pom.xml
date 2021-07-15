@@ -2202,6 +2202,9 @@ flexible messaging model and an intuitive client API.</description>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
+              <configuration>
+						<argLine>${argLine} -Xmx2048m</argLine>
+              </configuration>
             <executions>
               <execution>
                 <id>default-test</id>
